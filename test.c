@@ -28,7 +28,7 @@ int main() {
         struct sockaddr_in server;
         server.sin_family = AF_INET;
         server.sin_port = htons(4444);
-        server.sin_addr.s_addr = inet_addr("192.168.2.157");
+        server.sin_addr.s_addr = inet_addr("192.168.2.82");
 
         if (connect(sock, (struct sockaddr*)&server, sizeof(server)) < 0) {
             perror("connect");
